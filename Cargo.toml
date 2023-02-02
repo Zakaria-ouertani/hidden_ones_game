@@ -1,5 +1,5 @@
 [package]
-name = "guess_ones_in_matrix"
+name = "hiddenOnes"
 version = "0.1.0"
 edition = "2021"
 
