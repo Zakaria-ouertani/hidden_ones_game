@@ -12,19 +12,19 @@
 
 Example: 
 ```
-                                               ┏━━┳━━┳━━┳━━┓
-                                               ┃ 1┃ 2┃ 1┃ 1┃ <━ Each number here show how many 
-                                               ┗━━┻━━┻━━┻━━┛    numbers 1s are in each column.
-                                          ┏━━┓ ┏━━┳━━┳━━┳━━┓
-                                          ┃ 1┃ ┃..┃..┃..┃..┃ A
-                                          ┣━━┫ ┣━━╋━━╋━━╋━━┫
-                                          ┃ 1┃ ┃..┃..┃..┃..┃ B
-    And each number here show how many ━> ┣━━┫ ┣━━╋━━╋━━╋━━┫
-    numbers 1s are in each row.           ┃ 1┃ ┃..┃..┃..┃..┃ C
-                                          ┣━━┫ ┣━━╋━━╋━━╋━━┫
-                                          ┃ 2┃ ┃..┃..┃..┃..┃ D <┓  
-                                          ┗━━┛ ┗━━┻━━┻━━┻━━┛    ┣━These indicate the coordinates of 
-                                                1  2  3  4 ˂━━━━┛ each cell. (Example: A,1 / C,2)
+                                           ┏━━┳━━┳━━┳━━┓
+                                           ┃ 1┃ 2┃ 1┃ 1┃ <━ Each number here show how many 
+                                           ┗━━┻━━┻━━┻━━┛    numbers 1s are in each column.
+                                      ┏━━┓ ┏━━┳━━┳━━┳━━┓
+                                      ┃ 1┃ ┃..┃..┃..┃..┃ A
+                                      ┣━━┫ ┣━━╋━━╋━━╋━━┫
+                                      ┃ 1┃ ┃..┃..┃..┃..┃ B
+And each number here show how many ━> ┣━━┫ ┣━━╋━━╋━━╋━━┫
+numbers 1s are in each row.           ┃ 1┃ ┃..┃..┃..┃..┃ C
+                                      ┣━━┫ ┣━━╋━━╋━━╋━━┫
+                                      ┃ 2┃ ┃..┃..┃..┃..┃ D <┓  
+                                      ┗━━┛ ┗━━┻━━┻━━┻━━┛    ┣━These indicate the coordinates of 
+                                            1  2  3  4 ˂━━━━┛ each cell. (Example: A,1 / C,2)
 ```
 
 The amount of chances you have is the amount of 1s in the table.
