@@ -9,7 +9,7 @@
 
 ## How to play
 * You're given a square table where each cell contains 0 or 1.
-* Initially they're hidden and you have to guess which cell contain 1.
+* Initially they're hidden and you have to guess which cells contain 1.
 
 Example: 
 ```
