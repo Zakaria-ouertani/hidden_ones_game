@@ -3,6 +3,7 @@
 ## Build instructions
 ```
 > git clone https://github.com/Zakaria-ouertani/hidden_ones_game
+> cd hidden_ones_game
 > cargo build --release
 ```
 
