@@ -29,3 +29,19 @@ numbers 1s are in each row.           ┃ 1┃ ┃..┃..┃..┃..┃ C
 
 The amount of chances you have is the amount of 1s in the table.
 The example above has 5.
+
+After using all your chances the game end and tells you how many mistakes you made and gives u your table with alongside the correct one.
+Example
+```
+ ┏━━┳━━┳━━┳━━┓    ┏━┳━┳━┳━┓
+ ┃-1┃ 1┃..┃..┃    ┃0┃1┃1┃1┃
+ ┣━━╋━━╋━━╋━━┫    ┣━╋━╋━╋━┫
+ ┃..┃..┃..┃..┃    ┃0┃1┃0┃1┃
+ ┣━━╋━━╋━━╋━━┫    ┣━╋━╋━╋━┫
+ ┃ 1┃-1┃..┃..┃    ┃1┃0┃1┃0┃
+ ┣━━╋━━╋━━╋━━┫    ┣━╋━╋━╋━┫
+ ┃..┃ 1┃-1┃-1┃    ┃0┃1┃0┃0┃
+ ┗━━┻━━┻━━┻━━┛    ┗━┻━┻━┻━┛
+Vous avez terminez avec 4 faute(s).
+ ```
+ 
