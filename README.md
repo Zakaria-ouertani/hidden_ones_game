@@ -13,25 +13,25 @@
 
 Example: 
 ```
-                                           ┏━━┳━━┳━━┳━━┓
-                                           ┃ 1┃ 2┃ 1┃ 1┃ <━ Each number here show how many 
-                                           ┗━━┻━━┻━━┻━━┛    numbers 1s are in each column.
-                                      ┏━━┓ ┏━━┳━━┳━━┳━━┓
-                                      ┃ 1┃ ┃..┃..┃..┃..┃ A
-                                      ┣━━┫ ┣━━╋━━╋━━╋━━┫
-                                      ┃ 1┃ ┃..┃..┃..┃..┃ B
-And each number here show how many ━> ┣━━┫ ┣━━╋━━╋━━╋━━┫
-numbers 1s are in each row.           ┃ 1┃ ┃..┃..┃..┃..┃ C
-                                      ┣━━┫ ┣━━╋━━╋━━╋━━┫
-                                      ┃ 2┃ ┃..┃..┃..┃..┃ D <┓  
-                                      ┗━━┛ ┗━━┻━━┻━━┻━━┛    ┣━These indicate the coordinates of 
-                                            1  2  3  4 ˂━━━━┛ each cell. (Example: A,1 / C,2)
+                                            ┏━━┳━━┳━━┳━━┓
+                                            ┃ 1┃ 2┃ 1┃ 1┃ <━ Each number here shows how many 
+                                            ┗━━┻━━┻━━┻━━┛    numbers 1s are in each column.
+                                       ┏━━┓ ┏━━┳━━┳━━┳━━┓
+                                       ┃ 1┃ ┃..┃..┃..┃..┃ A
+                                       ┣━━┫ ┣━━╋━━╋━━╋━━┫
+                                       ┃ 1┃ ┃..┃..┃..┃..┃ B
+And each number here shows how many ━> ┣━━┫ ┣━━╋━━╋━━╋━━┫
+numbers 1s are in each row.            ┃ 1┃ ┃..┃..┃..┃..┃ C
+                                       ┣━━┫ ┣━━╋━━╋━━╋━━┫
+                                       ┃ 2┃ ┃..┃..┃..┃..┃ D <┓  
+                                       ┗━━┛ ┗━━┻━━┻━━┻━━┛    ┣━These indicate the coordinates of 
+                                             1  2  3  4 ˂━━━━┛ each cell. (Example: A,1 / C,2)
 ```
 
 The amount of chances you have is the amount of 1s in the table.
 The example above has 5.
 
-After using all your chances the game end and tells you how many mistakes you made and gives u your table with alongside the correct one.
+After using all your chances the game ends and tells you how many mistakes you made and shows your answer with the correct one next to it.
 Example
 ```
  ┏━━┳━━┳━━┳━━┓    ┏━┳━┳━┳━┓
