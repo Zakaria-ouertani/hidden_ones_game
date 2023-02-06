@@ -45,3 +45,5 @@ Example
 Vous avez terminez avec 4 faute(s).
  ```
  
+ ### Playthrough
+ ![Playthrough](g.gif)
