@@ -4,9 +4,9 @@ use min_max_lib::array_max_len;
 use min_max_lib::matrix_max_len;
 
 pub fn printable_matrix(m: Vec<Vec<String>>, margin: usize) -> Vec<String> {
-    let box_corners: [&str; 9] = ["┏", "┓", "┣", "┫", "┃", "╋", "┗", "┛", "┻"];
+    let box_corners = ["┏", "┓", "┣", "┫", "┃", "╋", "┗", "┛", "┻"];
     let pad = matrix_max_len(&m);
-    let mut lines: Vec<String> = vec![];
+    let mut lines = vec![];
     let mut sep = String::new();
     let margin_space = " ".repeat(margin);
     let x = m.len();
@@ -66,7 +66,6 @@ pub fn print_array_h(t: Vec<String>, margin: usize, empty: usize) {
         margin_space, box_corners[3], sep, box_corners[4]
     )
 }
-
 pub fn print_array_h_no_corners(t: Vec<String>, margin: usize) {
     let pad = array_max_len(&t);
     let margin_space = " ".repeat(margin);
@@ -82,9 +81,8 @@ pub fn print_array_h_no_corners(t: Vec<String>, margin: usize) {
     }
     println!("\n{}  ", margin_space,)
 }
-
 pub fn printable_array_v(t: Vec<String>, margin: usize) -> Vec<String> {
-    let box_corners: [&str; 8] = ["━", "┏", "┓", "┃", "┣", "┫", "┗", "┛"];
+    let box_corners = ["━", "┏", "┓", "┃", "┣", "┫", "┗", "┛"];
     let mut lines = vec![];
     let pad = array_max_len(&t);
     let margin_space = " ".repeat(margin);
@@ -131,27 +129,23 @@ pub fn printable_array_v_no_corners(t: Vec<String>, margin: usize) -> Vec<String
     lines
 }
 
-pub fn gen_separator(n: usize, index: usize, pad: usize, empty: usize) -> String {
-    let mut separator = "".to_string();
-    let sep_length = n * 2 - 1;
-    let mut separator_caracter: String = "".to_string();
-
-    if index == 0 {
-        separator_caracter = "┳".to_string()
-    } else if 0 < index && index < n {
-        separator_caracter = "╋".to_string()
-    } else if index == n {
-        separator_caracter = "┻".to_string()
-    }
-
-    let separator_caracters: [String; 2] = ["━".repeat(pad), separator_caracter];
-
-    if empty != 0 {
-        separator = " ".repeat(sep_length)
-    } else {
-        for i in 0..sep_length {
-            separator = separator + &separator_caracters[i % 2];
+pub fn gen_separator(n: usize, i: usize, pad: usize, empty: usize) -> String {
+    let mut sep = "".to_string();
+    let l = n * 2 - 1;
+    for s in 0..l {
+        let mut line = "━".repeat(pad);
+        if s % 2 != 0 && empty == 0 {
+            if i == 0 {
+                line = "┳".to_string()
+            } else if 0 < i && i < n {
+                line = "╋".to_string()
+            } else if i == n {
+                line = "┻".to_string()
+            }
+        } else if empty != 0 {
+            line = " ".repeat(pad)
         }
+        sep = sep + &line
     }
-    separator
+    sep
 }
