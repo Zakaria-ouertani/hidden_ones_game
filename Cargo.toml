@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 clap = { version = "4.3.11", features = ["derive"] }
 rand = "0.8.5"
-regex = "1.9.1"
+regex = "1.9.3"
 [profile.release]
 lto = true
 strip = true
